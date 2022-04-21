@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyVehicle</string>
+    <string name="navigaton_drawer_open">Open Navigation Drawer</string>
+    <string name="navigaton_drawer_close">Close Navigation Drawer</string>
+
+
+    <string name="next">SONRAKİ</string>
+    <string name="skip">SKIP</string>
+    <string name="start">TAMAM</string>
+
+    <string name="slide_1_title">Şuanki Kilometreniz :</string>
+    <string name="slide_1_desc">Description Screen 1</string>
+
+    <string name="slide_2_title">Sigorta Başlangıç Tarihiniz :</string>
+    <string name="slide_2_desc">Description Screen 2</string>
+
+    <string name="slide_3_title">En son Muayene Tarihiniz :</string>
+    <string name="slide_3_desc">Description Screen 3</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+</resources>

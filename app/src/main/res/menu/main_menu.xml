@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Anasayfa" />
+        <item
+            android:id="@+id/nav_kilometer"
+            android:icon="@drawable/speed"
+            android:title="Kilometre" />
+
+        <item
+            android:id="@+id/nav_engine"
+            android:icon="@drawable/motor"
+            android:title="Motor" />
+
+        <item
+            android:id="@+id/nav_kaporta"
+            android:icon="@drawable/kaporta"
+            android:title="Kaporta" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Profil">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login"
+                    android:title="Giriş" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/back"
+                    android:title="Çıkış" />
+                <item
+                    android:id="@+id/nav_profil"
+                    android:icon="@drawable/profil"
+                    android:title="Profil" />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="iletişim">
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/paylas"
+                android:title="Paylaş" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate"
+                android:title="Puan Ver" />
+        </menu>
+    </item>
+</menu>
