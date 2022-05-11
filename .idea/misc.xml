@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/button_warning.xml" value="0.209" />
+        <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/button_warning2.xml" value="0.154" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/cezalar.xml" value="0.209" />
+        <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/dialog_background.xml" value="0.209" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/menu.xml" value="0.1" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/menu_renk.xml" value="0.209" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/menu_rnk.xml" value="0.209" />
@@ -16,11 +19,13 @@
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/sigorta.xml" value="0.209" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/speed.xml" value="0.209" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/vergiler.xml" value="0.102" />
+        <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/drawable/warning_dialog.xml" value="0.209" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/activity_intro.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/activity_onboarding.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/activity_welcome.xml" value="0.33" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/header.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/layout_warning.xml" value="0.5" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/onboarding_screen.xml" value="0.22" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/rounded_edittext.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/Mrz/AndroidStudioProjects/MyVehicle/app/src/main/res/layout/screen1.xml" value="0.22" />

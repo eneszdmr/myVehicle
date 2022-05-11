@@ -1,13 +1,17 @@
 package com.example.myvehicle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -34,7 +38,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private int[] layouts;
     private Button btnNext;
     private Preferences preferences;
-
+    private EditText etkilometre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +63,7 @@ public class WelcomeActivity extends AppCompatActivity {
         dotsLayout = findViewById(R.id.layoutDots);
 
         btnNext = findViewById(R.id.btn_next);
-
+        etkilometre = findViewById(R.id.etkilometrebilgisi);
 
         // layouts of all welcome sliders
         // add few more layouts if you want
@@ -77,8 +81,6 @@ public class WelcomeActivity extends AppCompatActivity {
         myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
-        EditText etkilometrebilgisi = viewPager.findViewById(R.id.etkilometrebilgisi);
-        String km = etkilometrebilgisi.getText().toString();
 
 
         btnNext.setOnClickListener(new View.OnClickListener() {
@@ -93,17 +95,7 @@ public class WelcomeActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(current);
                 } else {
                     try {
-
-
-                        if (km == "")
-                            //   etkilometrebilgisi.setError("hata");
-
-                            Snackbar.make(viewPager, "kilometre boş", Snackbar.LENGTH_SHORT).show();
-
-                        else {
-
-                            launchHomeScreen();
-                        }
+                        showAlertview();
 
 
                     } catch (Exception e) {
@@ -116,6 +108,32 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void showAlertview() {
+        AlertDialog.Builder builder=new AlertDialog.Builder(this,R.style.AlertDialogTheme);
+        View view =LayoutInflater.from(this).inflate(
+                R.layout.layout_warning,(ConstraintLayout)findViewById(R.id.layoutDialog));
+        builder.setView(view);
+        ((TextView) view.findViewById(R.id.textTitle)).setText("Evet");
+
+        final AlertDialog alertDialog=builder.create();
+        view.findViewById(R.id.yesButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialog.dismiss();
+            }
+        });
+
+        if(alertDialog.getWindow() !=null){
+            alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+
+        }
+        alertDialog.show();
+
+
+    }
+
+
 
     private void addBottomDots(int currentPage) {
         dots = new TextView[layouts.length];
@@ -205,8 +223,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
             View view = layoutInflater.inflate(layouts[position], container, false);
             container.addView(view);
-            EditText etkilometrebilgisi, etsigortaBilgisi, etmuayeneBilgisi;
-            etkilometrebilgisi = view.findViewById(R.id.etkilometrebilgisi);
+
 
             return view;
         }
